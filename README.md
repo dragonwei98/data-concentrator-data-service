@@ -48,7 +48,7 @@ Send data to a higher-level device by using MQTT Connector and Data Service (cus
 - MQTT Connector V 1.2.9
 - Cloud Connector V 1.2.4
 - Data Service V 1.2.0
-- IE Flow Creator V 1.0.2
+- IE Flow Creator V 1.0.4
 - Performance Insight V 1.2.0
 - Industrial Edge Device V 1.2.0-56
 - Web browser (Mozilla or Chrome)
