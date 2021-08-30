@@ -17,9 +17,9 @@ In your IEM open the Databus and launch the configurator.
 Add a user with this topic:
 `"ie/#"`
 
-![ie_databus_user](graphics/IE_Databus.PNG)
+![ie_databus_user](docs/graphics/IE_Databus.PNG)
 
-![ie_databus](graphics/IE_Databus.PNG)
+![ie_databus](docs/graphics/IE_Databus.PNG)
 
 Deploy the configuration.
 
