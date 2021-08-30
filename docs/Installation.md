@@ -1,14 +1,19 @@
-# Configuration
+# Installation
 
-- [Configuration](#configuration)
-    - [Configure Databus](#configure-databus)
-    - [Configure S7 Connector](#configure-s7connector)
-    - [Configure Cloud Connector ](#configure-cloudconnector)
-      - [Configure Device 1 & 2](#configure-cloudconnector-send-data)
-      - [Configure Central Device](#configure-central-get-data)
-    - [Configure IE-Flow Creator](#ie-flow-creator)
+- [Installation](#installation)
+    - [Configuration Device Energy 1 & 2]
+        - [Configure Databus](#configure-databus)
+        - [Configure S7 Connector](#configure-s7connector)
+        - [Configure IE Cloud Connector Local Lake](#configure-cloud-connector)
+    - [Configuration Central Device]
+        - [IE MQTT Connector]
+        - [Configure IE-Flow Creator](#ie-flow-creator)
+        - [Data Service Custom Adapter]
+        - [Performance Insight]
    
-# Configuration Device Energy 1 and Energy 2 
+## Configuration Device Energy 1 and Energy 2 
+
+Configuration of the 2 edge devices for data transfer to the central edge device
 
 ### Configure Databus
 
@@ -25,46 +30,37 @@ Deploy the configuration.
 
 ### Configure S7 Connector
 
-![](graphics/add_data_source.PNG)
+![Create PLC Connection](docs/graphics/add_data_source.PNG)
 
-Add your Tags(graphics/add_tag.PNG) 
+Launch the S7 Connector and configure the PLC connection 
 
-Click on the right corner Settings and add your Databus credentials(graphics/add_credentials.PNG)
+Start and Deploy your S7 Connector. 
 
-Afterwards you can deploy and start the project(graphics/workflow_project.PNG)
+### Configure Cloud Connector Local Lake 
 
+Add a topic in the Bus Adaptor(docs/graphics/configuration_bus_adaptor.PNG)
 
-### Configure Cloud Connector 
+Afterwards create a Route in the middle. 
 
-Add a Topics in the Bus Adapter
+Add Cloud Connector Client by using Local Lake as an option. 
 
-Create one Route
+![Cloud_Conenctor_Local_Lake](docs/graphics/general_config_cloudconnector.PNG). 
 
-Add Cloud Connector Client by using Local Lake as an option
+Two topics must be specified: One for the data points and the other for the metadata(docs/graphics/general_config_cloudconnector.PNG)
 
-Under Hostname type the IP-Adress of your Central Device
+Deploy process: Select the route, then the topic from the bus adaptor and at least the topic from the cloud connector. Then press Deploy.   
 
-Port Number is 9883 
-
-Switch to the tab "Advanced" and configure your Publish Topic
-
-![Cloud_Conenctor_Local_Lake](graphics/.PNG)
-
-
-Configuration of Cloud Connector for Device 1 and Device 2 
-
-(graphics/flow_creator.PNG)
 
 ## Configuration Central Device 
 
 
 ### Configure Databus
 
-### 
-
 ### Configure IE MQTT Connector
 
 ### Import and Configure IE Flow Creator
 
-### Configure Data Service
+### Setup Data Service
+
+### Setup Performance Insight 
 
