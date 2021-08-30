@@ -17,7 +17,7 @@ In your IEM open the Databus and launch the configurator.
 Add a user with this topic:
 `"ie/#"`
 
-![ie_databus_user](graphics/IE_Databus_User.PNG)
+![ie_databus_user](graphics/IE_Databus.PNG)
 
 ![ie_databus](graphics/IE_Databus.PNG)
 
