@@ -59,7 +59,6 @@ Close the option and prove under "Edit configuration" the following settings:
 ![cc_step_2](graphics/cc_step_1.png)
 
 
-
 3: 
 Bus Adaptor Configuration
 
@@ -107,7 +106,7 @@ Overview of the Cloud Connector configuration
 
 ## Configuration Central Device 
 
-missing general text 
+The following applications must be installed and configured on the central edge device
 
 - IE Databus
 - IE MQTT Connector
@@ -128,7 +127,7 @@ In the Databus Configurator switch to "IE MQTT" Connector and enable the externa
 
 ![databus_external_step_2](graphics/databus_external_step_2.png)
 
-**Import and Configure IE Flow Creator**
+**IE Flow Creator**
 
 Purpose of the Flow: The incoming data from the two Edge devices must be converted into the appropriate format so that the data service is able to process the data. 
 
@@ -137,7 +136,7 @@ Import the [convertdata.JSON](src/convertdata.JSON) and Deploy
 ![ie_flow_step_1](graphics/ie_flow_step_1.png)
 
 
-### Setup Data Service
+**Data Service**
 
 - We get data from 2 different devices. In the data service we create a custom adapter for each device. 
 - Important here is to create the appropriate metadata topic.
@@ -160,7 +159,7 @@ Check the datatransfer with preview data
 ![data_service_Step4](graphics/data_service_step4.png)
 
 
-### Setup Performance Insight 
+**Performance Insight**
 
 The same Asset structure is visible in Performance Insight
 Finish the example by creating your Dashboard
