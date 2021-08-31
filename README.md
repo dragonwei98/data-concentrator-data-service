@@ -42,16 +42,16 @@ Send data to a higher-level device by using MQTT Connector and Data Service (cus
 
 ### Used components
 
-- Industrial Edge Management (IEM) V1.2.0-34
+- Industrial Edge Management V1.2.0-34
 - IE Databus Configurator V1.2.23
 - IE Databus V1.2.18
 - SIMATIC S7 Connector V1.2.29
-- MQTT Connector V 1.2.9
-- Cloud Connector V 1.2.4
-- Data Service V 1.2.0
-- IE Flow Creator V 1.1.2
-- Performance Insight V 1.2.0
-- Industrial Edge Device V 1.2.0-56
+- MQTT Connector V1.2.9
+- Cloud Connector V1.2.4
+- Data Service V1.2.0
+- IE Flow Creator V1.1.2
+- Performance Insight V1.2.0
+- Industrial Edge Device V1.2.0-56
 - Web browser (Mozilla or Chrome)
 
 
