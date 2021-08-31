@@ -120,7 +120,7 @@ missing general text
 Add your user credentials and publish topic
 
 
-![databus_external_step_2](graphics/databus_external_step_2.png)
+![IE_Databus](graphics/IE_Databus.png)
 
 **Configure IE MQTT Connector**
 
