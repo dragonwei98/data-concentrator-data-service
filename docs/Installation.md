@@ -1,12 +1,9 @@
-# Installation
+# Configuration
 
 - [Installation](#installation)
-     -[Configure PLC project](#configure-plc-project)
-    - [Configuration Device Energy1&2](#configure-device1-device2)
-        - [Configure Databus](#configure-databus)
-        - [Configure S7 Connector](#configure-s7connector)
-        - [Configure IE Cloud Connector Local Lake](#configure-cloud-connector)
-    - [Configuration Central Device](#configure-central-device)
+    - [Configure PLC project](#configure-plc-project)
+    - [Configuration Device Energy 1 & 2](#configuration-device-energy-1-and-energy-2)
+    - [Configuration Central Device](#configuration-central-device)
         - [IE MQTT Connector](#mqtt-connector)
         - [Configure IE-Flow Creator](#ie-flow-creator)
         - [Data Service Custom Adapter](#dataservice-custom-adapter)
