@@ -55,13 +55,13 @@ Send data to a higher-level device by using MQTT Connector and Data Service (cus
 - Web browser (Mozilla or Chrome)
 
 
-## Configuration steps Device 1
+## Configuration Central Edge Device
 
 You can find the further information about the following steps in the [docs](docs/Installation.md)
 - Install Data Service, Databus, MQTT Connector, IE Flow Creator, Performance Insight
 
 
-## Configuration steps Device 2 & 3 
+## Configuration Energy Edge Device 1 & 2 
 
 You can find the further information about the following steps in the [docs](docs/Installation.md)
 - Install S7 Connector, IE Databus, IE Cloud Connector 
