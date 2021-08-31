@@ -13,51 +13,75 @@
    
 ## Configuration Device Energy 1 and Energy 2 
 
--Configuration of the 2 edge devices for data transfer to the central edge device
+- Configuration of the 2 edge devices for data transfer to the central edge device
 
 ### Configure Databus
 
--In your IEM open the Databus and launch the configurator.
--Add a user with this topic:
+- Launch the IE Databus Configurator and add your related credentials/topics:
 `"ie/#"`
-
-![ie_databus_user](docs/graphics/IE_Databus.png)
-
+![ie_databus_user](docs/graphics/IE_Databus_User.png)
 ![ie_databus](docs/graphics/IE_Databus.png)
-
-- Deploy the configuration
 
 ### Configure S7 Connector
 
 ![Create PLC Connection](docs/graphics/add_data_source.png)
 
--Launch the S7 Connector and configure the PLC connection 
-
--Start and Deploy your S7 Connector
+- Launch the S7 Connector and configure the PLC connection 
+- Start and Deploy your S7 Connector configuration
 
 ### Configure Cloud Connector Local Lake 
 
-Add a topic in the Bus Adaptor(docs/graphics/configuration_bus_adaptor.png)
-Add a topic in the Bus Adaptor
-- Create a Route
-- Add Cloud Connector Client by using Local Lake 
+- Configure starting from the left side "Bus Adaptor" to the right the "Cloud Connector Clients"
+- To deploy the configuration, initially click on your route and connect your topics from the bus adaptor with your cloud topics 
+- Then click on deploy. 
+- Note: You must create one topic for the data and one topic for the metadata. 
 
-![Cloud_Conenctor_Local_Lake](docs/graphics/general_config_cloudconnector.PNG). 
+Add a topic in the Bus Adaptor(docs/graphics/cc_step_1.png)
 
-Two topics must be specified: One for the data points and the other for the metadata(docs/graphics/general_config_cloudconnector.PNG)
-Deploy process: Select the route, then the topic from the bus adaptor and at least the topic from the cloud connector. Then press Deploy.   
 
+Switch to the Standard tab and put your Configuration from the databus(docs/graphics/cc_step_2.png)
+
+
+Close the option and prove under "Edit configuration" the following settings(docs/graphics/cc_step_3.png)
+
+- Same steps for the metadata topic
+
+Create for the data a Route(docs/graphics/cc_route_step1.png)
+
+Create for the metadata a Route(docs/graphics/cc_route_step2.png)
+
+ Add a Cloud Connector Clients by using Local lake as Type(docs/graphics/cc_add_cloud_step_1.png)
+
+- For receiving data on our central edge device we use the MQTT Connector, which is accessible via port 9883
+
+Add the external databus(docs/graphics/cc_add_cloud_step_2.png)
+
+Adjust the Publish Topic(docs/graphics/cc_add_cloud_step_3.png)
+
+- Same steps for the metadata topic
+
+Overview of the Cloud Connector configuration(docs/graphics/cc_general_overview_1.png)
 
 ## Configuration Central Device 
 
 
 ### Configure Databus
 
+
+
 ### Configure IE MQTT Connector
+
+
 
 ### Import and Configure IE Flow Creator
 
+
+
 ### Setup Data Service
 
+
+
 ### Setup Performance Insight 
+
+
 
