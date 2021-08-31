@@ -96,7 +96,7 @@ Adjust the Publish Topic
 
 8: Create Publish Topic
 
-![cc_add_cloud_step_3](graphics/cc_add_cloud_step_3.png)
+![cc_add_cloud_step_3_adv](graphics/cc_add_cloud_step_3_adv.png)
 
 - Same steps for the metadata topic
 
@@ -119,13 +119,14 @@ missing general text
 
 Add your user credentials and publish topic
 
+
 ![databus_external_step_2](graphics/databus_external_step_2.png)
 
 **Configure IE MQTT Connector**
 
 In the Databus Configurator switch to "IE MQTT" Connector and enable the external databus by clicking unsecure
 
-![databus_user_step_2](graphics/databus_user_step_2.png)
+![databus_external_step_2](graphics/databus_external_step_2.png)
 
 **Import and Configure IE Flow Creator**
 
@@ -148,11 +149,11 @@ Create your custom Adapter for Edge Device Energy 1
 
 Create your custom Adapter for Edge Device Energy 2
 
-![data_service_Step2](graphics/data_service_step2.png)
+![data_service_Step2](graphics/data_service_step_2.png)
 
 Save the connection and return to the main page
 
-![data_service_Step3](graphics/data_service_step3.png)
+![data_service_Step3](graphics/data_service_step_3.png)
 
 Check the datatransfer with preview data
 
