@@ -67,21 +67,29 @@ Overview of the Cloud Connector configuration(docs/graphics/cc_general_overview_
 
 ### Configure Databus
 
-
+Add your user credentials and publish topic(docs/graphics/databus_user_step_1.png)
 
 ### Configure IE MQTT Connector
 
-
+In the Databus Configurator switch to "IE MQTT" Connector and enable the external databus by clicking unsecure(docs/graphics/databus_external_step_2.png)
 
 ### Import and Configure IE Flow Creator
 
+- what does the flow ? The data sent from the two Edge devices must be converted into the appropriate format so that the data service is able to process the data. 
+
+Import the Flow and deploy. 
+
+The incoming data should then be visible in the debug window
 
 
 ### Setup Data Service
 
-
+- We get data from 2 different devices. In the data service we create a custom adapter for each device. 
+- Important here is to create the appropriate metadata topic.
+- The connection status changes automatically to green if its correctly configured. 
 
 ### Setup Performance Insight 
 
-
+The same Asset structure is visible in Performance Insight
+Finish the example by creating your Dashboard
 
