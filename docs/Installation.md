@@ -48,15 +48,19 @@ In order to build this infrastructure, these apps must be configured properly:
 - Then click on deploy. 
 - Note: You must create one topic for the data and one topic for the metadata. 
 
-1: Add a topic in the Bus Adaptor 
+1:
+Add a topic in the Bus Adaptor 
+
 ![cc_step_1](graphics/cc_step_1.png)
 
 2:
+
 ![cc_step_2](graphics/cc_step_1.png)
 
 Close the option and prove under "Edit configuration" the following settings: 
 
 3:
+
 ![cc_step_3](graphics/cc_step_3.png)
 
 - Same steps for the metadata topic
@@ -75,10 +79,10 @@ Create for the metadata a Route
 Add a Cloud Connector Clients by using Local lake as Type
  
 6: 
+
 ![cc_add_cloud_step_1](graphics/cc_add_cloud_step_1.png)
 
 - For receiving data on our central edge device we use the MQTT Connector, which is accessible via port 9883
-
 
 7: 
 Add the external databus
@@ -96,6 +100,7 @@ Adjust the Publish Topic
 Overview of the Cloud Connector configuration
 
 9:
+
 ![cc_general_overview_1](graphics/cc_general_overview_1.png)
 
 ## Configuration Central Device 
