@@ -54,16 +54,18 @@ Add a topic in the Bus Adaptor
 ![cc_step_1](graphics/cc_step_1.png)
 
 2:
+Close the option and prove under "Edit configuration" the following settings: 
 
 ![cc_step_2](graphics/cc_step_1.png)
 
-Close the option and prove under "Edit configuration" the following settings: 
 
-3:
+
+3: 
+Bus Adaptor Configuration
 
 ![cc_step_3](graphics/cc_step_3.png)
 
-- Same steps for the metadata topic
+- Same procedure for the metadata topic
 
 
 4:
@@ -79,27 +81,27 @@ Create for the metadata a Route
 Add a Cloud Connector Clients by using Local lake as Type
  
 6: 
+Client Connection Local Lake
 
 ![cc_add_cloud_step_1](graphics/cc_add_cloud_step_1.png)
 
 - For receiving data on our central edge device we use the MQTT Connector, which is accessible via port 9883
 
 7: 
-Add the external databus
+Add external databus from Central Device
 
 ![cc_add_cloud_step_2](graphics/cc_add_cloud_step_2.png)
 
 Adjust the Publish Topic
 
-8: 
+8: Create Publish Topic
 
 ![cc_add_cloud_step_3](graphics/cc_add_cloud_step_3.png)
 
 - Same steps for the metadata topic
 
-Overview of the Cloud Connector configuration
-
 9:
+Overview of the Cloud Connector configuration
 
 ![cc_general_overview_1](graphics/cc_general_overview_1.png)
 
@@ -146,15 +148,15 @@ Create your custom Adapter for Edge Device Energy 1
 
 Create your custom Adapter for Edge Device Energy 2
 
-![data_service_Step2](graphics/data_service_Step2.png)
+![data_service_Step2](graphics/data_service_step2.png)
 
 Save the connection and return to the main page
 
-![data_service_Step3](graphics/data_service_Step3.png)
+![data_service_Step3](graphics/data_service_step3.png)
 
 Check the datatransfer with preview data
 
-![data_service_Step4](graphics/data_service_Step4.png)
+![data_service_Step4](graphics/data_service_step4.png)
 
 
 ### Setup Performance Insight 
