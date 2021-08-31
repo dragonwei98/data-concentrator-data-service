@@ -48,33 +48,46 @@ In order to build this infrastructure, these apps must be configured properly:
 - Then click on deploy. 
 - Note: You must create one topic for the data and one topic for the metadata. 
 
-Add a topic in the Bus Adaptor
+1: Add a topic in the Bus Adaptor 
 ![cc_step_1](graphics/cc_step_1.png)
 
+2:
 ![cc_step_2](graphics/cc_step_1.png)
 
 Close the option and prove under "Edit configuration" the following settings: 
 
+3:
 ![cc_step_3](graphics/cc_step_3.png)
 
 - Same steps for the metadata topic
 
+
+4:
 Create for the data a Route
+
 ![cc_route_step1](graphics/cc_route_step1.png)
 
+5:
 Create for the metadata a Route
+
 ![cc_route_step2](graphics/cc_route_step2.png)
 
- Add a Cloud Connector Clients by using Local lake as Type
+Add a Cloud Connector Clients by using Local lake as Type
  
+6: 
 ![cc_add_cloud_step_1](graphics/cc_add_cloud_step_1.png)
 
 - For receiving data on our central edge device we use the MQTT Connector, which is accessible via port 9883
 
+
+7: 
 Add the external databus
+
 ![cc_add_cloud_step_2](graphics/cc_add_cloud_step_2.png)
 
 Adjust the Publish Topic
+
+8: 
 
 ![cc_add_cloud_step_3](graphics/cc_add_cloud_step_3.png)
 
@@ -82,6 +95,7 @@ Adjust the Publish Topic
 
 Overview of the Cloud Connector configuration
 
+9:
 ![cc_general_overview_1](graphics/cc_general_overview_1.png)
 
 ## Configuration Central Device 
@@ -97,11 +111,13 @@ missing general text
 **Configure Databus**
 
 Add your user credentials and publish topic
-![databus_user_step_1](graphics/databus_user_step_1.png)
+
+![databus_external_step_2](graphics/databus_external_step_2.png)
 
 **Configure IE MQTT Connector**
 
 In the Databus Configurator switch to "IE MQTT" Connector and enable the external databus by clicking unsecure
+
 ![databus_user_step_2](graphics/databus_user_step_2.png)
 
 **Import and Configure IE Flow Creator**
@@ -109,6 +125,7 @@ In the Databus Configurator switch to "IE MQTT" Connector and enable the externa
 - Purpose of the Flow: The incoming data from the two Edge devices must be converted into the appropriate format so that the data service is able to process the data. 
 
 Import the json file and Deploy
+
 ![ie_flow_step_1](graphics/ie_flow_step_1.png)
 
 
@@ -119,15 +136,19 @@ Import the json file and Deploy
 - The connection status changes automatically to green if its correctly configured. 
 
 Create your custom Adapter for Edge Device Energy 1
+
 ![data_service_Step1](graphics/data_service_Step1.png)
 
 Create your custom Adapter for Edge Device Energy 2
+
 ![data_service_Step2](graphics/data_service_Step2.png)
 
 Save the connection and return to the main page
+
 ![data_service_Step3](graphics/data_service_Step3.png)
 
 Check the datatransfer with preview data
+
 ![data_service_Step4](graphics/data_service_Step4.png)
 
 
