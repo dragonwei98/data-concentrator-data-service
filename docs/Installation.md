@@ -38,7 +38,7 @@
 - Then click on deploy. 
 - Note: You must create one topic for the data and one topic for the metadata. 
 
-Add a topic in the Bus Adaptor(graphics/cc_step_1.png)
+![add_topic_cloud]Add a topic in the Bus Adaptor(graphics/cc_step_1.png)
 
 
 Switch to the Standard tab and put your Configuration from the databus/graphics/cc_step_2.png)
@@ -52,7 +52,7 @@ Create for the data a Route/graphics/cc_route_step1.png)
 
 Create for the metadata a Route(graphics/cc_route_step2.png)
 
- Add a Cloud Connector Clients by using Local lake as Type(graphics/cc_add_cloud_step_1.png)
+ Add a Cloud Connector Clients by using Local lake as Type(docs/graphics/cc_add_cloud_step_1.png)
 
 - For receiving data on our central edge device we use the MQTT Connector, which is accessible via port 9883
 
