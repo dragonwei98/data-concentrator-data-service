@@ -1,6 +1,7 @@
 # Installation
 
 - [Installation](#installation)
+     -[Configure PLC project](#configure-plc-project)
     - [Configuration Device Energy1&2](#configure-device1-device2)
         - [Configure Databus](#configure-databus)
         - [Configure S7 Connector](#configure-s7connector)
@@ -11,11 +12,23 @@
         - [Data Service Custom Adapter](#dataservice-custom-adapter)
         - [Performance Insight](#performance-insight-dashboard)
    
+## Configure PLC project
+
+1) Open TIA portal and open the project containing the filling application
+2) Download the PLC program to the PLC and set the PLC into RUN
+3) Open the HMI to control the filling application   
+   
 ## Configuration Device Energy 1 and Energy 2 
 
-- Configuration of the 2 edge devices for data transfer to the central edge device
+To read data from the PLC and provide the data, we will use S7 Connector to establish connection with the PLC via OPC UA.
+The S7 Connector sends the data to the Databus, where the Data Service app can collect what is needed for the notification rules.
+In order to build this infrastructure, these apps must be configured properly:
 
-### Configure Databus
+- IE Databus
+- S7 Connector
+- Cloud Connector
+
+**IE Databus**
 
 - Launch the IE Databus Configurator and add your related credentials/topics:
 `"ie/#"`
@@ -24,21 +37,22 @@
 
 ![ie_databus](graphics/IE_Databus.png)
 
-### Configure S7 Connector
+**S7 Connector**
 
 ![Create PLC Connection](graphics/add_data_source.png)
 
 - Launch the S7 Connector and configure the PLC connection 
 - Start and Deploy your S7 Connector configuration
 
-### Configure Cloud Connector Local Lake 
+**Cloud Connector Local Lake**
 
 - Configure starting from the left side "Bus Adaptor" to the right the "Cloud Connector Clients"
 - To deploy the configuration, initially click on your route and connect your topics from the bus adaptor with your cloud topics 
 - Then click on deploy. 
 - Note: You must create one topic for the data and one topic for the metadata. 
 
-![add_topic_cloud]Add a topic in the Bus Adaptor(graphics/cc_step_1.png)
+Add a topic in the Bus Adaptor
+![cc_step_1](graphics/cc_step_1.png)
 
 
 Switch to the Standard tab and put your Configuration from the databus/graphics/cc_step_2.png)
@@ -66,16 +80,23 @@ Overview of the Cloud Connector configuration(graphics/cc_general_overview_1.png
 
 ## Configuration Central Device 
 
+missing general text 
 
-### Configure Databus
+- IE Databus
+- IE MQTT Connector
+- IE Flow Creator
+- Data Service
+- Performance Insight
+
+**Configure Databus**
 
 Add your user credentials and publish topic(graphics/databus_user_step_1.png)
 
-### Configure IE MQTT Connector
+**Configure IE MQTT Connector**
 
 In the Databus Configurator switch to "IE MQTT" Connector and enable the external databus by clicking unsecure(graphics/databus_external_step_2.png)
 
-### Import and Configure IE Flow Creator
+**Import and Configure IE Flow Creator**
 
 - Purpose of the Flow: The incoming data from the two Edge devices must be converted into the appropriate format so that the data service is able to process the data. 
 
