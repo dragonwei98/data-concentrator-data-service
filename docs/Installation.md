@@ -75,11 +75,9 @@ In the Databus Configurator switch to "IE MQTT" Connector and enable the externa
 
 ### Import and Configure IE Flow Creator
 
-- what does the flow ? The data sent from the two Edge devices must be converted into the appropriate format so that the data service is able to process the data. 
+- Purpose of the Flow: The incoming data from the two Edge devices must be converted into the appropriate format so that the data service is able to process the data. 
 
-Import the Flow and deploy. 
-
-The incoming data should then be visible in the debug window
+Import the json file and Deploy(docs/graphics/ie_flow_step_1.png)
 
 
 ### Setup Data Service
@@ -88,8 +86,19 @@ The incoming data should then be visible in the debug window
 - Important here is to create the appropriate metadata topic.
 - The connection status changes automatically to green if its correctly configured. 
 
+Create your custom Adapter for Edge Device Energy 1(docs/graphics/data_service_Step1.png)
+
+Create your custom Adapter for Edge Device Energy 2(docs/graphics/data_service_step_2.png)
+
+Save the connection and return to the main page(docs/graphics/data_service_step_3.png)
+
+Check the datatransfer with preview data(docs/graphics/data_service_step_4.png)
+
+
 ### Setup Performance Insight 
 
 The same Asset structure is visible in Performance Insight
-Finish the example by creating your Dashboard
+Finish the example by creating your Dashboard(docs/graphics/performance_insight_step1.png)
+
+
 
