@@ -1,70 +1,104 @@
-# Configuration
+# Installation
 
-- [Configuration](#configuration)
-    - [Configure Databus](#configure-databus)
-    - [Configure S7 Connector](#configure-s7connector)
-    - [Configure Cloud Connector ](#configure-cloudconnector)
-      - [Configure Device 1 & 2](#configure-cloudconnector-send-data)
-      - [Configure Central Device](#configure-central-get-data)
-    - [Configure IE-Flow Creator](#ie-flow-creator)
+- [Installation](#installation)
+    - [Configuration Device Energy1&2](#configure-device1-device2)
+        - [Configure Databus](#configure-databus)
+        - [Configure S7 Connector](#configure-s7connector)
+        - [Configure IE Cloud Connector Local Lake](#configure-cloud-connector)
+    - [Configuration Central Device](#configure-central-device)
+        - [IE MQTT Connector](#mqtt-connector)
+        - [Configure IE-Flow Creator](#ie-flow-creator)
+        - [Data Service Custom Adapter](#dataservice-custom-adapter)
+        - [Performance Insight](#performance-insight-dashboard)
    
-# Configuration Device Energy 1 and Energy 2 
+## Configuration Device Energy 1 and Energy 2 
+
+- Configuration of the 2 edge devices for data transfer to the central edge device
 
 ### Configure Databus
 
-In your IEM open the Databus and launch the configurator.
-
-Add a user with this topic:
+- Launch the IE Databus Configurator and add your related credentials/topics:
 `"ie/#"`
-
-![ie_databus_user](graphics/IE_Databus_User.PNG)
-
-![ie_databus](graphics/IE_Databus.PNG)
-
-Deploy the configuration.
+![ie_databus_user](docs/graphics/IE_Databus_User.png)
+![ie_databus](docs/graphics/IE_Databus.png)
 
 ### Configure S7 Connector
 
-![](graphics/add_data_source.PNG)
+![Create PLC Connection](docs/graphics/add_data_source.png)
 
-Add your Tags(graphics/add_tag.PNG) 
+- Launch the S7 Connector and configure the PLC connection 
+- Start and Deploy your S7 Connector configuration
 
-Click on the right corner Settings and add your Databus credentials(graphics/add_credentials.PNG)
+### Configure Cloud Connector Local Lake 
 
-Afterwards you can deploy and start the project(graphics/workflow_project.PNG)
+- Configure starting from the left side "Bus Adaptor" to the right the "Cloud Connector Clients"
+- To deploy the configuration, initially click on your route and connect your topics from the bus adaptor with your cloud topics 
+- Then click on deploy. 
+- Note: You must create one topic for the data and one topic for the metadata. 
 
-
-### Configure Cloud Connector 
-
-Add a Topics in the Bus Adapter
-
-Create one Route
-
-Add Cloud Connector Client by using Local Lake as an option
-
-Under Hostname type the IP-Adress of your Central Device
-
-Port Number is 9883 
-
-Switch to the tab "Advanced" and configure your Publish Topic
-
-![Cloud_Conenctor_Local_Lake](graphics/.PNG)
+Add a topic in the Bus Adaptor(docs/graphics/cc_step_1.png)
 
 
-Configuration of Cloud Connector for Device 1 and Device 2 
+Switch to the Standard tab and put your Configuration from the databus(docs/graphics/cc_step_2.png)
 
-(graphics/flow_creator.PNG)
+
+Close the option and prove under "Edit configuration" the following settings(docs/graphics/cc_step_3.png)
+
+- Same steps for the metadata topic
+
+Create for the data a Route(docs/graphics/cc_route_step1.png)
+
+Create for the metadata a Route(docs/graphics/cc_route_step2.png)
+
+ Add a Cloud Connector Clients by using Local lake as Type(docs/graphics/cc_add_cloud_step_1.png)
+
+- For receiving data on our central edge device we use the MQTT Connector, which is accessible via port 9883
+
+Add the external databus(docs/graphics/cc_add_cloud_step_2.png)
+
+Adjust the Publish Topic(docs/graphics/cc_add_cloud_step_3.png)
+
+- Same steps for the metadata topic
+
+Overview of the Cloud Connector configuration(docs/graphics/cc_general_overview_1.png)
 
 ## Configuration Central Device 
 
 
 ### Configure Databus
 
-### 
+Add your user credentials and publish topic(docs/graphics/databus_user_step_1.png)
 
 ### Configure IE MQTT Connector
 
+In the Databus Configurator switch to "IE MQTT" Connector and enable the external databus by clicking unsecure(docs/graphics/databus_external_step_2.png)
+
 ### Import and Configure IE Flow Creator
 
-### Configure Data Service
+- Purpose of the Flow: The incoming data from the two Edge devices must be converted into the appropriate format so that the data service is able to process the data. 
+
+Import the json file and Deploy(docs/graphics/ie_flow_step_1.png)
+
+
+### Setup Data Service
+
+- We get data from 2 different devices. In the data service we create a custom adapter for each device. 
+- Important here is to create the appropriate metadata topic.
+- The connection status changes automatically to green if its correctly configured. 
+
+Create your custom Adapter for Edge Device Energy 1(docs/graphics/data_service_Step1.png)
+
+Create your custom Adapter for Edge Device Energy 2(docs/graphics/data_service_step_2.png)
+
+Save the connection and return to the main page(docs/graphics/data_service_step_3.png)
+
+Check the datatransfer with preview data(docs/graphics/data_service_step_4.png)
+
+
+### Setup Performance Insight 
+
+The same Asset structure is visible in Performance Insight
+Finish the example by creating your Dashboard(docs/graphics/performance_insight_step1.png)
+
+
 
