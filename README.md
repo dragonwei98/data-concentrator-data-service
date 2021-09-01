@@ -9,8 +9,6 @@ This example shows how to use the Data Service Custom Adapter
   - [Requirements](#requirements)
     - [Prerequisities](#prerequisities)
     - [Used components](#used-components)
-  - [Configuration steps](#configuration-steps)
-  - [Usage](#usage)
   - [Documentation](#documentation)
   - [Contribution](#contribution)
   - [Licence and Legal Information](#licence-and-legal-information)
