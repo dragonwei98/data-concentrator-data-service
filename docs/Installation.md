@@ -49,6 +49,8 @@ In order to build this infrastructure, these apps must be configured properly:
 - Note: You must create one topic for the data and one topic for the metadata. 
 
 1:
+ie/d/j/simatic/v1/s7c1/dp/r/EnergyMeter/default
+ie/m/j/simatic/v1/s7c1/dp/r/EnergyMeter/
 Add a topic in the Bus Adaptor 
 
 ![cc_step_1](graphics/cc_step_1.png)
