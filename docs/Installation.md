@@ -131,7 +131,9 @@ In the Databus Configurator switch to "IE MQTT" Connector and enable the externa
 
 Purpose of the Flow: The incoming data from the two Edge devices must be converted into the appropriate format so that the data service is able to process the data. 
 
-Import the [convertdata.JSON](src/convertdata.JSON) and Deploy
+Import the and Deploy the json file 
+![convertdata.JSON](src/convertdata.JSON)
+
 
 ![ie_flow_step_1](graphics/ie_flow_step_1.png)
 
