@@ -19,7 +19,9 @@
 
 To read data from the PLC and provide the data, we will use S7 Connector to establish connection with the PLC via OPC UA.
 The S7 Connector sends the data to the Databus, where the Data Service app can collect what is needed for the notification rules.
+Here is the example with one device. The same shall be done with the second device as well.
 In order to build this infrastructure, these apps must be configured properly:
+
 
 - IE Databus
 - S7 Connector
@@ -88,20 +90,21 @@ Client Connection Local Lake
 
 ![cc_add_cloud_step_1](graphics/cc_add_cloud_step_1.png)
 
-- For receiving data on our central edge device we use the MQTT Connector, which is accessible via port 9883
+For receiving data on our central edge device we use the MQTT Connector, which is accessible via port 9883
 
 7: 
 Add external databus from Central Device
 
 ![cc_add_cloud_step_2](graphics/cc_add_cloud_step_2.png)
 
-Adjust the Publish Topic
 
 8: Create Publish Topic
 
+'"ie/d/cc/dp/r/energy1/default"'
+'"ie/m/cc/dp/r/energy1/default"'
+
 ![cc_add_cloud_step_3_adv](graphics/cc_add_cloud_step_3_adv.png)
 
-- Same steps for the metadata topic
 
 9:
 Overview of the Cloud Connector configuration
