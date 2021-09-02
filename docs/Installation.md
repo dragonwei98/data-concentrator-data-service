@@ -52,26 +52,26 @@ In order to build this infrastructure, these apps must be configured properly:
 
 1:
 Add a topic in the Bus Adaptor 
+One for the data and one for the metadata
+
 
 '"ie/d/j/simatic/v1/s7c1/dp/r/EnergyMeter/default"'
 
-'"ie/m/j/simatic/v1/s7c1/dp/r/EnergyMeter/"'
+'"ie/m/j/simatic/v1/s7c1/dp"'
 
 
 ![cc_step_1](graphics/cc_step_1.png)
 
 2:
-Close the option and prove under "Edit configuration" the following settings: 
+Close the option and prove under "Edit configuration" the following settings
+In the Standard tab you can configure your Edge Databus which contains databus credentials and Port: 1883
 
 ![cc_step_2](graphics/cc_step_2.png)
 
 
-3: 
-Bus Adaptor Configuration
-
+3:
+At least you need two entries in the Bus Adpater
 ![cc_step_3](graphics/cc_step_3.png)
-
-- Same procedure for the metadata topic
 
 4:
 Create for the data a Route
