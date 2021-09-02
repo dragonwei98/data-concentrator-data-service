@@ -62,9 +62,11 @@ One for the data and one for the metadata
 
 ![cc_step_1](graphics/cc_step_1.png)
 
+
 2:
 Close the option and prove under "Edit configuration" the following settings
 In the Standard tab you can configure your Edge Databus which contains databus credentials and Port: 1883
+
 
 ![cc_step_2](graphics/cc_step_2.png)
 
@@ -72,6 +74,7 @@ In the Standard tab you can configure your Edge Databus which contains databus c
 3:
 At least you need two entries in the Bus Adpater
 ![cc_step_3](graphics/cc_step_3.png)
+
 
 4:
 Create for the data a Route
@@ -83,10 +86,10 @@ Create for the metadata a Route
 
 ![cc_route_step2](graphics/cc_route_step2.png)
 
-Add a Cloud Connector Clients by using Local lake as Type
  
 6: 
 Client Connection Local Lake
+Select Local Lake
 
 ![cc_add_cloud_step_1](graphics/cc_add_cloud_step_1.png)
 
@@ -98,10 +101,10 @@ Add external databus from Central Device
 ![cc_add_cloud_step_2](graphics/cc_add_cloud_step_2.png)
 
 
-8: Create Publish Topic
+8: Create Publish Topics
 
 '"ie/d/cc/dp/r/energy1/default"'
-'"ie/m/cc/dp/r/energy1/default"'
+'"ie/m/j/cc/energy1/dp"'
 
 ![cc_add_cloud_step_3_adv](graphics/cc_add_cloud_step_3_adv.png)
 
