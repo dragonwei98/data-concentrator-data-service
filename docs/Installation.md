@@ -40,18 +40,18 @@ In order to build this infrastructure, these apps must be configured properly:
 
 ![Create PLC Connection](graphics/add_data_source.png)
 
-- Launch the S7 Connector and configure the PLC connection 
-- Start and Deploy your S7 Connector configuration
+Launch the S7 Connector and configure the PLC connection 
+Start and Deploy your S7 Connector configuration
 
 **Cloud Connector Local Lake**
 
-- Configure starting from the left side "Bus Adaptor" to the right the "Cloud Connector Clients"
-- To deploy the configuration, initially click on your route and connect your topics from the bus adaptor with your cloud topics 
-- Then click on deploy. 
-- Note: You must create one topic for the data and one topic for the metadata. 
+Configure starting from the left side "Bus Adaptor" to the right the "Cloud Connector Clients"
+To deploy the configuration, initially click on your route and connect your topics from the bus adaptor with your cloud topics 
+Then click on deploy. 
+Note: You must create one topic for the data and one topic for the metadata. 
 
 1:
-Add a topic in the Bus Adaptor 
+Add the Topics in the Bus Adaptor Field
 One for the data and one for the metadata
 
 
@@ -64,8 +64,7 @@ One for the data and one for the metadata
 
 
 2:
-Close the option and prove under "Edit configuration" the following settings
-In the Standard tab you can configure your Edge Databus which contains databus credentials and Port: 1883
+Go to the standard tab and add your databus credentials (user, passwort and port)
 
 
 ![cc_step_2](graphics/cc_step_2.png)
@@ -73,6 +72,7 @@ In the Standard tab you can configure your Edge Databus which contains databus c
 
 3:
 At least you need two entries in the Bus Adpater
+
 ![cc_step_3](graphics/cc_step_3.png)
 
 
