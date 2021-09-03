@@ -3,10 +3,8 @@
 This example shows how to use the Data Service Custom Adapter 
 
 - [Data Service Custom Adapter ](#custom-adapter)
-  - [Description](#description)
     - [Overview](#overview)
     - [General task](#general-task)
-  - [Requirements](#requirements)
     - [Prerequisities](#prerequisities)
     - [Used components](#used-components)
   - [Documentation](#documentation)
@@ -14,7 +12,6 @@ This example shows how to use the Data Service Custom Adapter
   - [Licence and Legal Information](#licence-and-legal-information)
 
 
-## Description
 
 ### Overview
 
@@ -22,10 +19,11 @@ This example shows how to use the Data Service Custom Adapter
 
 ### General task
 
-Send data to a higher-level device by using MQTT Connector and Data Service (custom Adapter)
+The idea is to send the data centrally to a higher-level edge device from the field level. 
+For this purpose, one (or more) edge devices are integrated into the plant network and used to forward data to the central Edge Device. 
+In the central device, the data is stored  using Data Service and analyzed with Performance Insight. 
 
 
-## Requirements
 
 
 ###  Prerequisities
