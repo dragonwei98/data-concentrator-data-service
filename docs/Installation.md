@@ -15,7 +15,7 @@
 2) Download the PLC program to the PLC and set the PLC into RUN
 3) Open the HMI to control the filling application   
    
-## Configuration Device Energy 1 and Energy 2 
+## Configuration Device Energy 1
 
 IED located in the field level for gathering data from the field devices and forward data via Cloud Connector
 
