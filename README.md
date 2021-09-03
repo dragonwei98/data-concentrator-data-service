@@ -18,7 +18,6 @@ This example shows how to use the Data Service Custom Adapter
 
 ### Overview
 
-This document describes how to configure the all required Applciation to be able to use the Custom Adapter in the Data Service. 
 
 ![overview](docs/graphics/overview.png)
 
