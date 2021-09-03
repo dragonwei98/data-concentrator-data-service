@@ -18,7 +18,6 @@ This example shows how to use the Data Service Custom Adapter
 
 ### Overview
 
-
 ![overview](docs/graphics/overview.png)
 
 ### General task
@@ -33,8 +32,8 @@ Send data to a higher-level device by using MQTT Connector and Data Service (cus
 - Establish Connection to one PLC for getting data into the Edge Device
 - Access to an Industrial Edge Management System (IEM)
 - Onboarded minimum 2 Edge Devices 
-- Installed Apps Device 1 Performance Insight, MQTT Connector, Databus, Data Service
-- Installed Apps Device 2 & 3 S7 Connector, Cloud Connector, Databus
+- Installed Apps on central Device Performance Insight, MQTT Connector, Databus, Data Service
+- Installed Apps Energy Device 1 S7 Connector, Cloud Connector, Databus
 - Google Chrome (Version ≥ 72) or Firefox (Version ≥ 62)
 
 ### Used components
@@ -58,7 +57,7 @@ You can find the further information about the following steps in the [docs](doc
 - Install Data Service, Databus, MQTT Connector, IE Flow Creator, Performance Insight
 
 
-## Configuration Energy Edge Device 1 & 2 
+## Configuration Energy Device 1
 
 You can find the further information about the following steps in the [docs](docs/Installation.md)
 - Install S7 Connector, IE Databus, IE Cloud Connector 
