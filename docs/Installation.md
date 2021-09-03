@@ -17,10 +17,8 @@
    
 ## Configuration Device Energy 1
 
-IED located in the field level for gathering data from the field devices and forward data via Cloud Connector
-
-In the next steps is described how to configure the devices which are responsible for sending data. 
-Remark: The screenshots contain the configuration for device 1. device 2 is not listed because they are the same configurations.
+In the next steps is described how to configure the devices which are required for sending data. 
+Remark: The screenshots contain the configuration for device 1.
 
 
 - IE Databus
