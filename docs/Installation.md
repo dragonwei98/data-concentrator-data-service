@@ -17,10 +17,10 @@
    
 ## Configuration Device Energy 1 and Energy 2 
 
-To read data from the PLC and provide the data, we will use S7 Connector to establish connection with the PLC via OPC UA.
-The S7 Connector sends the data to the Databus, where the Data Service app can collect what is needed for the notification rules.
-Here is the example with one device. The same shall be done with the second device as well.
-In order to build this infrastructure, these apps must be configured properly:
+IED located in the field level for gathering data from the field devices and forward data via Cloud Connector
+
+In the next steps is described how to configure the devices which are responsible for sending data. 
+Remark: The screenshots contain the configuration for device 1. device 2 is not listed because they are the same configurations.
 
 
 - IE Databus
@@ -125,6 +125,8 @@ The following applications must be installed and configured on the central edge 
 - Performance Insight
 
 **Configure Databus**
+
+Data concentrator for field level devices for displaying factory process data using performance insight
 
 Add your user credentials and publish topic
 
