@@ -103,7 +103,7 @@ Add external databus from Central Device
 
 8: Create Publish Topics
 
-'"ie/d/cc/dp/r/energy1/default"'
+'"ie/d/j/cc/dp/r/energy1/default"'
 '"ie/m/j/cc/energy1/dp"'
 
 ![cc_add_cloud_step_3_adv](graphics/cc_add_cloud_step_3_adv.png)
