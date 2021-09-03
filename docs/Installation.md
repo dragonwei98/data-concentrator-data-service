@@ -2,7 +2,7 @@
 
 - [Installation](#installation)
     - [Configure PLC project](#configure-plc-project)
-    - [Configuration Device Energy 1 & 2](#configuration-device-energy-1-and-energy-2)
+    - [Configuration Device Energy 1](#configuration-device-energy-1)
     - [Configuration Central Device](#configuration-central-device)
         - [IE MQTT Connector](#mqtt-connector)
         - [Configure IE-Flow Creator](#ie-flow-creator)
