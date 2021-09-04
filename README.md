@@ -1,4 +1,4 @@
-# Data Service Custom Adapter
+# Decentralized data forwarding to a higher-level device 
 
 This example shows how to use the Data Service Custom Adapter 
 
