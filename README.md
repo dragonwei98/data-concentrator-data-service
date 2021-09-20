@@ -29,7 +29,6 @@ In the central device, the data is stored  using Data Service and analyzed with 
 ###  Prerequisities
 - Establish Connection to one PLC for getting data into the Edge Device
 - Access to an Industrial Edge Management System (IEM)
-- Onboarded minimum 2 Edge Devices 
 - Installed Apps on central Device Performance Insight, MQTT Connector, Databus, Data Service
 - Installed Apps Energy Device 1 S7 Connector, Cloud Connector, Databus
 - Google Chrome (Version ≥ 72) or Firefox (Version ≥ 62)
