@@ -37,9 +37,9 @@ In the central device, the data is stored  using Data Service and analyzed with 
 ### Used components
 
 - Industrial Edge Management V1.2.0-34
-- IE Databus Configurator V1.2.23
+- IE Databus Configurator V1.2.29
 - IE Databus V1.2.18
-- SIMATIC S7 Connector V1.2.29
+- SIMATIC S7 Connector V1.2.38
 - MQTT Connector V1.2.9
 - Cloud Connector V1.2.4
 - Data Service V1.2.0
